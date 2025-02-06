@@ -7,7 +7,6 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -16,9 +15,15 @@
             background-color: #f8f8f8;
             color: #fff;
             margin: 0;
-            background-image: url('https://github.com/TODOLAB-WEB/SARTORIA-TRAMA/blob/main/banner-trama-web.png?raw=true');
+            background-image: url('URL_IMMAGINE_DESKTOP');
             background-size: cover;
             background-position: center;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
         }
         img {
             max-width: 250px;
@@ -42,7 +47,11 @@
         }
         @media screen and (max-width: 768px) {
             body {
-                background-image: url('https://github.com/TODOLAB-WEB/SARTORIA-TRAMA/blob/main/banner-trama-mobile.png?raw=true');
+                background-image: url('URL_IMMAGINE_MOBILE');
+            }
+            .content {
+                padding: 30px;
+                max-width: 90%;
             }
             p {
                 margin-left: 25px;
@@ -52,9 +61,11 @@
     </style>
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/TODOLAB-WEB/SARTORIA-TRAMA/f7c766d7abd5fd564cf1c6ba432ff25d1504c30b/marchio-trama-landing-bianco.svg" alt="Sartoria Trama Logo">
-    <h1>Saremo presto online!</h1>
-    <p>Stiamo lavorando per offrirti un'esperienza unica. Torna a trovarci presto!</p>
-    <p>Contattaci: <a href="mailto:info@sartoriatrama.it">info@sartoriatrama.it</a></p>
+    <div class="content">
+        <img src="https://raw.githubusercontent.com/TODOLAB-WEB/SARTORIA-TRAMA/f7c766d7abd5fd564cf1c6ba432ff25d1504c30b/marchio-trama-landing-bianco.svg" alt="Sartoria Trama Logo">
+        <h1>Saremo presto online!</h1>
+        <p>Stiamo lavorando per offrirti un'esperienza unica. Torna a trovarci presto!</p>
+        <p>Contattaci: <a href="mailto:info@sartoriatrama.it">info@sartoriatrama.it</a></p>
+    </div>
 </body>
 </html>
